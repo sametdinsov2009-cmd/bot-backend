@@ -39,7 +39,7 @@ app.post('/api/chat', async (req, res) => {
 
         // 3. Запускаем Gemini с историей
         const model = genAI.getGenerativeModel({ 
-            model: "gemini-3-flash-preview",
+            model: "gemini-3.1-flash-lite",
             systemInstruction: SYSTEM_INSTRUCTION
         });
         
